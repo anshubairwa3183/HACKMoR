@@ -1,0 +1,3210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>HACKMoR'24</title>
+    <link rel="shortcut icon" href="images/hh.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min_1.css" crossorigin="anonymous">
+    <meta name="author" content="Shibu Shrivastwa">
+    <!--  -->
+    
+    <meta name="description" content="">
+    <meta name="keywords" content="Hackmor'24,Hackmor, Hackathon, manav rachna university, Developer, Tech, Online Hackathon, Technology, Faridabad,
+            city, GS, Github, Facebook, Online Hack, Hackmor Developer Tech Camp, Devloper, innovathon,">
+    <meta property="og:title" content="Hackmor'24 | Hackmor ">
+    <meta property="og:title" content="Hackmor'24">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="images/bg.gif">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:locale:alternate" content="en_GB">
+    <meta property="og:locale:alternate" content="es_ES">
+    <meta property="og:description" content="">
+    
+    <!-- Main Quill library -->
+    <script type="text/javascript" async="" src="js/insight.min.js"></script>
+    <script async="" src="js/gtm.js"></script>
+    <script async="" src="js/gtm_1.js"></script>
+    <script async="" src="js/fbevents.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script src="js/katex.min.js"></script>
+    <script src="js/quill.js"></script>
+    <link href="css/quill.bubble.css" rel="stylesheet">
+    <link href="css/quill.snow.css" rel="stylesheet">
+    <link href="css/monokai-sublime.min.css" rel="stylesheet">
+    <script src="js/highlight.min_1.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <script src="js/e3b250d36f.js" crossorigin="anonymous"></script>
+    <!--footer css-->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Hack CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Black Footer css-->
+    <link rel="stylesheet" href="css/black_footer.css">
+    <!-- https://swiperjs.com/ -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <!-- Lottie -->
+    <script src="js/lottie-player.js"></script>
+    
+    <style>
+        body {
+            background-image: url('images/un.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .theme-text {
+            color: var(--primary-color) !important;
+        }
+
+        @media(max-width: 540px) {
+            .rounded-circle {
+                border-radius: 10px !important;
+            }
+
+            .hack-details .float-right h6 {
+                font-size: 0.6rem;
+            }
+
+            .hack-details .float-right h4 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <style>
+        .winner_card_btn {
+            background-color: #e9eef1;
+            color: #000000 !important;
+            padding: 0.5rem 0.25rem;
+            border-radius: 4px;
+        }
+
+        .gray-border {
+            border: 1px solid #babec1 !important;
+            color: #5a6167 !important;
+            padding: 0.5rem 0.25rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .common-winnerSec {
+            text-align: center;
+            position: relative;
+        }
+
+        .common-winnerSec img {
+            position: absolute;
+            top: 0;
+            left: 20px;
+        }
+
+        @media(max-width:1200px) {
+            .common-winnerSec img {
+                left: 5px;
+            }
+        }
+
+        @media(max-width:775px) {
+            .common-winnerSec img {
+                left: 15px;
+            }
+        }
+
+        @media(max-width:375px) {
+            .common-winnerSec .card-title {
+                font-size: 1.3rem;
+            }
+
+            .common-winnerSec img {
+                left: 5px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    </style>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '166375699032627');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=166375699032627&ev=PageView
+      &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MRJCX96');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Custom Tags -->
+    <!-- Custom Google Analytics Tags -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5Z57KFWH');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-11357422206"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-11357422206');
+    </script>  
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRJCX96" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- 
+        ==============================================
+        ==============================================
+                            NAVBAR
+        ==============================================
+        ==============================================
+     -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="firstNav">
+        <a class="navbar-brand" href="/">
+            
+            <img id="black-logo" src="./images/l12.png" alt="" style="width: 80px; display: inline-block;">
+            
+        </a>
+
+        <!-- Google translate -->
+        <div>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                
+                
+                <!-- <li class="nav-item">
+                    <div class="dropdown notification">
+                        <a href="/hack/innovathon/login" class="nav-link login">Sign In</a>
+                    </div>
+                </li> -->
+                 
+                <li class="nav-item">
+                    <a class="nav-link " href="#about-link">About</a>
+                </li>
+                
+
+                
+                <li class="nav-item ">
+                    <a class="nav-link " href="#challenges-link">
+                        
+                        Themes
+                        
+                    </a>
+                </li>
+                
+
+                
+
+                <!-- Common Jury -->
+                
+                
+                
+
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="#schedule-link">
+                        Schedule
+                    </a>
+                </li>
+                
+
+                
+                <li class="nav-item">
+                    <a class="nav-link " href="#prize-link">
+                        
+                        Winnings
+                        
+                    </a>
+                </li>
+                
+
+                <!-- Common Jury -->
+                
+
+                
+                <!-- <li class="nav-item">
+                    <a class="nav-link " href="#partners">
+                        
+                        Partners
+                        
+                    </a>
+                </li> -->
+                
+
+                <li class="nav-item">
+                    <a class="nav-link " href="#faq-link">
+                        FAQ
+                    </a>
+                </li>
+
+                
+            </ul>
+        </div>
+    </nav>
+
+    
+
+    <div class="wrapper">
+        
+        
+
+
+        <!-- 
+        ==============================================
+        ==============================================
+                    Contact Section
+        ==============================================
+        ==============================================
+        -->
+
+        <section class="help-bar d-none d-md-block">
+            <div class="container">
+                <div class="d-flex small text-muted text-reset py-2">
+
+                    <div class="pl-0 my-2 mr-auto">
+                        <a>
+                            
+                            Email us at: 
+                            
+                        </a>
+
+                    </div>
+                    
+                    <div class="p-2">
+                        <a href="#" data-target="_blank">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="p-2">
+                        <a href="#" data-target="_blank">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="p-2">
+                        <a href="#" data-target="_blank">
+                            <!-- <i class="fab fa-twitter" aria-hidden="true"></i> -->
+                            <svg class="mr-1" width="13" height="13" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"></path>
+                              </svg>
+                              
+                              
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="p-2">
+                        <a href="#" data-target="_blank">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    
+                    
+                    <div class="p-2">
+                        <a class="text-dark" href="#" data-target="_blank">
+                            <i class="fab fa-discord" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 
+        ==============================================
+        ==============================================
+                    Hackathon Creative
+        ==============================================
+        ==============================================
+        -->
+
+        <div class="container-md px-0">
+            <div id="coverImageUrl" hidden="">./images/bg.gif</div>
+            <!-- <p></p> -->
+            <div id="themeOfHack" hidden="">#530561</div>
+            <!-- <div class="hack-creative" id="coverImage"></div> -->
+            <!-- <img src="https://s3bucket-incpro.s3.eu-north-1.amazonaws.com/2021-12-21T09%3A56%3A49.250Z-default-cover.jpg" id="coverImage" class="img-fluid hack-creative" alt=""> -->
+            <img src="./images/bg.gif" id="coverImage" class="img-fluid hack-creative desktopCoverImage" alt="">
+            
+            <img src="./images/bg.gif" id="mobilecoverImage" class="img-fluid hack-creative" alt="">
+        </div>
+
+        <!-- 
+        ==============================================
+        ==============================================
+                Hackathon Details TOP
+        ==============================================
+        ==============================================
+        -->
+
+        <div class="container-md">
+            <div class="row hack-details">
+                <div class="col-sm-2">
+                    <picture>
+                        <img class="rounded shadow-sm" src="images/l11.png" alt="innovathon">
+                    </picture>
+                    <div class="d-block d-md-none float-right">
+                        
+                        <h6 class="text-uppercase">
+                            Submission Deadline
+                        </h6>
+                        <h4 class="text-uppercase mb-3 font-weight-normal">
+                            <div class="endDate">Sun 8th September 2024<br><span style="font-size: x-small; white-space: nowrap;"> 22:30:00  (Indian Standard Time)</span></div>
+                        </h4>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-7">
+                    <h1>
+                        HACKMoR'24
+<!--                         
+                        <span class="badge badge-primary text-uppercase">
+                            #innovate more , Create more
+                        </span> -->
+                            
+                    </h1>
+                    <div class="details">
+                        
+
+                        <p>Innovate With Ideas, Elevate With Code</p>
+                        <a href="#about-link" class="text-muted font-weight-bold">view more...</a>
+                        
+                    </div>
+                    <p class="hack-stats">                        
+                        <span class="mr-2">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            1 - 4 Team Members        
+                        </span>
+                        
+                    </p>
+                </div>
+                <div class="col-sm-4 col-md-3 d-none d-md-block">
+                    <div class="date-section">
+                        
+                        <h6 class="text-uppercase">
+                            Last date to Register
+                        </h6>
+
+                        <h4 class="text-uppercase mb-3 font-weight-normal">
+                            <div class="endDate">Sun 8th September 2024<br><span style="font-size: x-small; white-space: nowrap;"> 22:30:00  (Indian Standard Time)</span></div>
+                        </h4>                      
+                        
+                        <a name="" id="" class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfvYu9evS4aLbXvm2BGtfNUuR4EmvArb7a7L7YYpOQFWmIvvQ/viewform" role="button">
+                            Registration Open
+                        </a>                       
+                    </div>
+
+                    <strong class="my-2 d-block text-right" id="idea-sec">Early bird registration available now!</strong>
+                    <!-- <small class="my-2 d-block text-right" id="idea-sec">Submission Open</small> -->
+                </div>
+            </div>
+        </div>
+
+        
+
+                
+
+                <!--
+ 
+        ==============================================
+        ==============================================
+                Details Section
+        ==============================================
+        ==============================================
+        -->
+
+        <section class="details-section">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-lg-3 d-none d-lg-block">
+                        <div class="left-column">
+                            <picture>
+                                <img class="w-75 rounded hack-side-logo" src="images/l11.png" alt="InnovaThon'23">
+                            </picture>
+                            <h1 class="mb-4">
+                                HACKMoR'24
+                            </h1>
+                            
+                            <h6 class="text-uppercase">
+                                Last date to Register
+                            </h6>
+    
+                            <h4 class="text-uppercase mb-3 font-weight-normal">
+                                <div class="endDate">Sun 8th September 2024<br><span style="font-size: x-small; white-space: nowrap;">22:30:00  (Indian Standard Time)</span></div>
+                            </h4>
+                            <!--  -->
+                            
+                            
+                            <a name="" id="" class="btn btn-primary" href="javascript:void(0)" role="button">
+                                Registration Open
+                            </a>
+                            
+                            
+                            <!--  -->
+                            
+
+                            <hr class="my-3">
+                            
+                            <!-- <h5 class="mb-2">
+                                Join us on Slack
+                            </h5>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="140" height="67" viewBox="0 0 233 67">
+                                <defs>
+                                    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%"
+                                        viewBox="0 0 150 43">
+                                        <image width="150" height="43"
+                                            xlink:href="data:image/png;base64,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" />
+                                    </pattern>
+                                </defs>
+                                <rect id="Image_9" data-name="Image 9" width="233" height="67" fill="url(#pattern)" />
+                            </svg>
+                            <hr class="my-4"> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="column-right">
+
+                            <!-- Hackathon Winners -->
+                            
+
+                            <!-- REG Section (Bootcamp) -->
+                            
+
+                            <!-- About Section -->
+                            
+                            <div id="about-link" class="scroll-link"></div>
+                            <div class="container-fluid about-section">
+                                
+                                <h3>
+                                    
+                                    About
+                                    
+                                </h3>
+                                <p>
+                                    </p><p style="text-align: justify;" data-sourcepos="1:1-1:42"><strong style="font-size: 16px; color: rgb(52, 73, 94);"><strong><img src="images/ab2.gif" alt="" width="100%" height="100%"></strong></strong></p>
+<p style="text-align: justify;" data-sourcepos="1:1-1:42">&nbsp;</p>
+<p style="text-align: justify;" data-sourcepos="1:1-1:42"><span style="color: rgb(33,37,41);"><strong>Are you ready to dive into a world of innovation, creativity, and problem-solving? Welcome to HackMore, the ultimate hackathon where your ideas come to life and your skills shine!
+    HackMore is not just another hackathon—it's a celebration of ingenuity and collaboration. Participants would work non-stop for 24 hours to prototype solutions for specific challenges or create new applications, products, or services.
+    The Hackathon fosters creativity, teamwork, and rapid problem-solving under pressure, encouraging participants to push boundaries and explore innovative ideas. At the end of the event, teams would present their creations to judges or a panel, competing for prizes and recognition based on criteria such as creativity, technical accomplishment, novelty and feasibility. Beyond competition, would gather valuable learning experiences, networking opportunities, and a platform for launching new ventures or initiatives.
+</strong></span></p>
+<p style="text-align: justify;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">
+</span></p>
+<p style="text-align: justify;" data-sourcepos="5:1-5:198">&nbsp;</p>
+<p style="text-align: justify;" data-sourcepos="5:1-5:198"><strong><span style="color: rgb(33,37,41);"><span style="text-decoration: underline;">In addition to winning the prizes the participating teams are benefitted from HACKMoR through:</span>&nbsp;</span></strong></p>
+<ol>
+    <li style="text-align: justify; font-weight: 500;" data-sourcepos="5:1-5:198">
+        <span style="color: rgb(33,37,41);">Networking:</span>
+        <p style="color: rgb(33,37,41);">Connects with peers and mentors. Builds relationships for future collaborations or job opportunities.</p>
+    </li>
+    <li style="text-align: justify; font-weight: 500;" data-sourcepos="5:1-5:198">
+        <span style="color: rgb(33,37,41);">Funding for Projects:</span>
+        <p style="color: rgb(33,37,41);">Opportunities to win grants or scholarships, and access to resources and potential investors for further project development.</p>
+    </li>
+    <li style="text-align: justify; font-weight: 500;" data-sourcepos="5:1-5:198">
+        <span style="color: rgb(33,37,41);">Patenting:</span>
+        <p style="color: rgb(33,37,41);">Gain insights into intellectual property rights and patenting processes. Potential to develop patentable ideas and innovations.</p>
+    </li>
+    <li style="text-align: justify; font-weight: 500;" data-sourcepos="5:1-5:198">
+        <span style="color: rgb(33,37,41);">Pre-incubation Facility:</span>
+        <p style="color: rgb(33,37,41);">Receive feedback and guidance from experienced mentors and judges. Access to pre-incubation programs and resources for early-stage startups.</p>
+    </li>
+    <li style="text-align: justify; font-weight: 500;" data-sourcepos="5:1-5:198">
+        <span style="color: rgb(33,37,41);">Collaboration and Teamwork:</span>
+        <p style="color: rgb(33,37,41);">Experiences working in a diverse team. Learns task division, conflict management, and leveraging team strengths.</p>
+    </li>
+</ol>
+    
+<!-- <li style="text-align: justify; font-weight: bold;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">Networking:
+    </span>
+    <p style="color: rgb(33,37,41);">Connects with peers and mentors.
+        Builds relationships for future collaborations or job opportunities</p>
+<h1></h1></li>
+<li style="text-align: justify; font-weight: bold;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">Funding for Projects:</span>
+    <p style="color: rgb(33,37,41);">Opportunities to win grants, or scholarships and
+        Access to resources and potential investors for further project development
+        </p></li>
+        <li style="text-align: justify; font-weight: bold;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">Patenting:</span>
+            <p style="color: rgb(33,37,41);">Gain insights into intellectual property rights and patenting processes,
+                Potential to develop patentable ideas and innovations
+                
+                </p></li>
+                <li style="text-align: justify; font-weight: bold;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">Pre-incubation Facility:</span>
+                    <p style="color: rgb(33,37,41);">Receive feedback and guidance from experienced mentors and judges.
+                        Access to pre-incubation programs and resources for early-stage startups
+                        
+                        </p></li>
+                        <li style="text-align: justify; font-weight: bold;" data-sourcepos="5:1-5:198"><span style="color: rgb(33,37,41);">Collaboration and Teamwork:</span>
+                            <p style="color: rgb(33,37,41);">Experiences working in a diverse team
+                                Learns task division, conflict management, and leveraging team strengths
+                                
+                                </p></li>
+</ol> -->
+<p><span style="color: rgb(33,37,41);">To know more about the details of the event, <a title=HACKMoR details" href="" target="_blank" rel="noopener"><span style="text-decoration: underline; color: rgb(53, 152, 219);">click here</span>.</a></span></p>
+<h1 style="text-align: justify;"><span style="color: rgb(0, 0, 0);"><strong><img src="images/prize.gif" alt="" width="100%" height="100%"><br></strong></span></h1>
+<hr>
+<h3 style="text-align: center;"><span style="color: rgb(33,37,41);">Manav Rachna University</span></h3>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: rgb(33,37,41);"><strong><em>Manav Rachna University (MRU)</em>is a leading State Private University (established by Haryana State Legislature Act No 26 of 2014 & under section 2(f) of UGC Act 1956), offering globally relevant education. The University has evolved from Manav Rachna College of Engineering (MRCE), which was established in the year 2004, a NAAC accredited ‘A’ Grade institution.
+    Manav Rachna University is among the Top 2 Emerging Engineering Institutions in India and has been ranked the No. 1 Engineering Institution in India for Research Capability & Placements in the Times Engineering Survey 2021. The accreditations/rankings are testimonials to the trust of accrediting bodies in the quality of education being offered, a well-established teaching and learning process guided by global best practices, and a culture of academic excellence promoting research, innovation & entrepreneurship.
+
+</strong></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<h3 style="text-align: center;"><span style="color: rgb(33,37,41);">
+    About School of Engineering
+    </span></h3>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;"><span style="color: rgb(33,37,41);"><strong><em>The School of Engineering (SOE) is a division within a university that focuses on providing education, research, and training in various fields of Engineering and Technology. The school offers a wide range of programs, degrees, and resources to prepare students for careers in Engineering, Technology, and related industries.
+    SOE at Manav Rachna University offers a variety of Undergraduate, Graduate, and Doctoral programs in various Engineering disciplines. These disciplines include Computer Science & Technology, Mechanical Engineering, and Electronics and Communication Engineering. 
+    SOE emphasis on Research and Innovation. Research within the school covers a wide range of topics, from developing new materials to designing advanced technologies. SOE has well-equipped laboratories and facilities where students can engage in experiments, design projects, and prototype development.
+    
+</strong></span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><em><strong><span style="color: rgb(52, 73, 94);"><a href="https:manavrachna.edu.in">manavrachna.edu.in</a></span></strong></em></p>
+<hr>
+<h3 style="text-align: center;"><span style="color: rgb(33,37,41);">Student Committee</span></h3>
+<h1 style="text-align: justify;"><span style="color: rgb(0, 0, 0);"><strong><img src="images/ab1.gif" alt="" width="100%" height="100%"><br></strong></span></h1>
+                                <p></p>
+                                
+                                
+                            </div>
+
+                            <hr class="my-4">
+
+                            
+                            <!-- Steps To Follow -->
+                            <!-- <div id="steps-link" class="scroll-link"></div>
+                            <div class="container-fluid">
+                                <h3>
+                                    Steps to Follow
+                                </h3>
+                                <img class="w-100 mt-2 rounded" src="https://via.placeholder.com/500x200" alt="">
+                            </div>
+
+                            <hr class="my-4"> -->
+
+                            <!-- Judging Criteria -->
+                            
+
+                            <!-- Challenges -->
+                            
+                            <div id="challenges-link" class="scroll-link"></div>
+                            <div class="container-fluid">
+                                <h3>
+                                    Themes
+                                </h3>
+
+
+                                <!-- DESKTOP VIEW -->
+                                
+                                <div class="d-block d-sm-none">
+                                    <div class="col-sm-12 p-0 m-0">
+                                        <!-- Swiper -->
+
+                                        <div class="swiper-container swiper-challenge challenge-1 pb-4">
+                                            <div class="swiper-wrapper">
+                                                
+                                                <div class="swiper-slide">
+                                                    <div class="card hack-card">
+                                                        <img class="card-img-top" src="images/giphy.gif" alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Fintech</h5>
+                                                            <p class="card-text">
+                                                                This theme maps to SDG  8: Decent Work and Economic Growth
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </p>
+                                                            
+                                                            <a name="" id="" class="btn-link" href="#" data-target="#mc10" data-toggle="modal" role="button">
+                                                                View More
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal End -->
+                                                
+                                                <div class="swiper-slide">
+                                                    <div class="card hack-card">
+                                                        <img class="card-img-top" src="images/env.gif" alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Environmental and sustainability</h5>
+                                                            <p class="card-text">
+                                                                This theme maps to SDG 6,7,13,14,15
+
+
+
+
+
+
+
+
+
+
+
+                                                            </p>
+                                                            
+                                                            <a name="" id="" class="btn-link" href="#" data-target="#mc11" data-toggle="modal" role="button">
+                                                                View More
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal End -->
+                                                
+                                                <div class="swiper-slide">
+                                                    <div class="card hack-card">
+                                                        <img class="card-img-top" src="images/sm.gif" alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Smart Cities</h5>
+                                                            <p class="card-text">
+                                                                This theme maps to SDG 11: Sustainable Cities and Communities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </p>
+                                                            
+                                                            <a name="" id="" class="btn-link" href="#" data-target="#mc12" data-toggle="modal" role="button">
+                                                                View More
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal End -->
+                                                
+                                                <div class="swiper-slide">
+                                                    <div class="card hack-card">
+                                                        <img class="card-img-top" src="images/he.gif" alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Healthcare</h5>
+                                                            <p class="card-text">
+                                                                This theme maps to SDG 3: Good Health and Well-being.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                            </p>
+                                                            
+                                                            <a name="" id="" class="btn-link" href="#" data-target="#mc13" data-toggle="modal" role="button">
+                                                                View More
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal End -->
+                                                
+                                                <div class="swiper-slide">
+                                                    <div class="card hack-card">
+                                                        <img class="card-img-top" src="images/op.gif" alt="">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Open Innovation</h5>
+                                                            <p class="card-text">
+                                                                This theme maps to SDGs 6, 12, 13, 14, 15
+
+
+
+
+
+
+
+
+
+                                                            </p>
+                                                            
+                                                            <a name="" id="" class="btn-link" href="#" data-target="#mc14" data-toggle="modal" role="button">
+                                                                View More
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Modal End -->
+                                                
+                                            </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination-challenge-1 text-center w-100"></div>
+                                    </div>
+                                </div>
+
+                                <!-- Challenge Modal -->
+                                
+                                <div class="modal fade" id="mc10" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Problem
+                                                    Statement
+                                                    in detail
+                                                </h5>
+                                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center my-2 mb-4">
+                                                                <h3>T1.Fintech
+                                                                </h3>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <p> &nbsp;</p> -->
+<h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C1.  Financial Inclusion: Develop a solution that increases access to financial services for underserved populations.</strong></li>
+<li><strong>C2. Personal Finance Management: Create a tool that helps users manage their finances effectively, with features for budgeting, savings, and investments.</strong></li>
+<li><strong>C3. Blockchain for Transparency: Utilize blockchain technology to enhance transparency and security in financial transactions or supply chain finance.</strong></li>
+<li><strong>C4. AI-Powered Financial Advisor (chatbot): Build an AI-driven platform that offers personalized financial advice based on user behavior and financial goals.</strong></li>
+</ul>
+<!-- <h5><strong>Technologies to be used</strong></h5>
+<ul>
+<li style="font-weight: bold;"><strong>AI</strong></li>
+<li style="font-weight: bold;"><strong>Blockchain</strong></li>
+<li style="font-weight: bold;"><strong>IOT</strong></li>
+</ul> -->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal fade" id="mc11" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Problem
+                                                    Statement
+                                                    in detail
+                                                </h5>
+                                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center my-2 mb-4">
+                                                                <h3>T2. Environmental and Sustainability
+                                                                </h3>
+                                                            </div>
+                                                            <div>
+                                                                <h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C5. Waste Management Optimization: Develop a system that optimizes waste collection, sorting, recycling, and disposal processes using IoT sensors, AI-driven analytics, and predictive modeling to improve operational efficiencies.</strong></li>
+<li><strong>C6. Carbon Footprint Reduction: Create an app that helps individuals or businesses track and reduce their carbon footprint through actionable insights.</strong></li>
+<li><strong>C7. Renewable Energy Monitoring: Build a platform for real-time monitoring and management of renewable energy sources like solar or wind farms.</strong></li>
+<li><strong>C8. Smart Agriculture: Develop IoT solutions for precision agriculture to optimize water usage, pesticide application, and crop yield.</strong></li>
+</ul>
+<!-- <h5><strong>Technologies to be used</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal fade" id="mc12" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Problem
+                                                    Statement
+                                                    in detail
+                                                </h5>
+                                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center my-2 mb-4">
+                                                                <h3>T3.Smart Cities
+                                                                </h3>
+                                                            </div>
+                                                            <div>
+                                                                <h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C9. Traffic Management: Design a system using IoT and AI to optimize traffic flow, reduce congestion, and improve commuting experiences.</strong></li>
+<li><strong>C10. Public Safety Enhancement: Develop solutions for real-time crime detection and emergency response coordination using predictive analytics and sensor networks.</strong></li>
+<li><strong>C11. Urban Air Quality Monitoring: Build a network of low-cost sensors to monitor air quality across different areas of the city and provide actionable insights.</strong></li>
+<li><strong>C12. Smart Waste Management: Create a solution that uses smart bins and data analytics to optimize waste collection schedules and routes.</strong></li>
+<li><strong>C13. Community Engagement Platform: Develop an app/UI that fosters citizen engagement with local government, facilitates feedback, and promotes community initiatives.</strong></li>
+</ul>
+<!-- <h5><strong>Use any of the following technologies</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal fade" id="mc13" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Problem
+                                                    Statement
+                                                    in detail
+                                                </h5>
+                                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center my-2 mb-4">
+                                                                <h3>T4. Healthcare
+                                                                </h3>
+                                                            </div>
+                                                            <div>
+                                                                <!-- <h5> &nbsp;</h5> -->
+<!-- <h5> &nbsp;</h5> -->
+<h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C14. Provide a solution that should leverage advancements in technology, to create meaningful and sustainable improvements in the lives of blind people.</strong></li>
+<li><strong>C15. Develop a complete solution that requires innovative solutions that enhance accessibility, affordability, and effectiveness of healthcare services while promoting patient-centric care and improving health outcomes for diverse populations.</strong></li>
+<li><strong>C16. Provide innovative solutions that improve early detection, personalized treatment options, patient education, and access to dermatological expertise, thereby enhancing overall management and outcomes for individuals affected by skin diseases.</strong></li>
+<li><strong>C17. Develop an early heart attack detection system, leveraging advanced algorithms and real-time data to identify at-risk individuals. The system should aim to enhance preventive healthcare and reduce mortality rates through timely intervention.</strong></li>
+</ul>
+<!-- <h5><strong>Use any of the following technologies</strong></h5> -->
+<!-- <ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="modal fade" id="mc14" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Problem
+                                                    Statement
+                                                    in detail
+                                                </h5>
+                                                <button class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="text-center my-2 mb-4">
+                                                                <h3>T5. Open Innovations
+
+                                                                </h3>
+                                                            </div>
+                                                            <div>
+                                                                <h5><strong>Challenge Areas </strong></h5>
+<ul>
+<li><strong>C18. Foster open innovation by developing creative, cross-disciplinary solutions to pressing global issues. Encourage collaboration and idea exchange to drive impactful technological and social advancements.</strong></li>
+<!-- <li style="font-weight: bold;"><strong>C10. Disaster Management system - optimized for either Flooding or Landslides</strong></li> -->
+</ul>
+<!-- <h5><strong>Use any of the following technologies</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                                <!-- MOBILE VIEW -->
+                                <div class="d-none d-sm-block">
+                                    <div class="row">
+                                        
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card hack-card">
+                                                <img class="card-img-top" src="images/giphy.gif" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">T1.Fintech</h5>
+                                                    <p class="card-text">
+                                                        This theme maps to SDG  8: Decent Work and Economic Growth.th and Well-being.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </p>
+                                                    
+                                                    <a name="" id="" class="btn-link" href="#" data-target="#c10" data-toggle="modal" role="button">
+                                                        View More
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="c10" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        
+                                                        <h5 class="modal-title" id="exampleModalLabel">Problem Statement
+                                                            in detail
+                                                        </h5>
+                                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center my-2 mb-4">
+                                                                        <h3>T1. Fintech
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <!-- <p> &nbsp;</p> -->
+<h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C1. Financial Inclusion: Develop a solution that increases access to financial services for underserved populations.</strong></li>
+<li><strong>C2. Personal Finance Management: Create a tool that helps users manage their finances effectively, with features for budgeting, savings, and investments.</strong></li>
+<li><strong>C3. Blockchain for Transparency: Utilize blockchain technology to enhance transparency and security in financial transactions or supply chain finance.</strong></li>
+<li><strong>C4.  AI-Powered Financial Advisor (chatbot): Build an AI-driven platform that offers personalized financial advice based on user behavior and financial goals.</strong></li>
+</ul>
+<!-- <h5><strong>Technologies to be used</strong></h5>
+<ul>
+<li style="font-weight: bold;"><strong>AI</strong></li>
+<li style="font-weight: bold;"><strong>Blockchain</strong></li>
+<li style="font-weight: bold;"><strong>IOT</strong></li>
+</ul> -->
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card hack-card">
+                                                <img class="card-img-top" src="images/env.gif" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">T2. Environmental and Sustainability</h5>
+                                                    <p class="card-text">
+                                                        This theme maps to SDG 6,7,13,14,15
+
+
+
+
+
+
+
+
+
+
+
+                                                    </p>
+                                                    
+                                                    <a name="" id="" class="btn-link" href="#" data-target="#c11" data-toggle="modal" role="button">
+                                                        View More
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="c11" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        
+                                                        <h5 class="modal-title" id="exampleModalLabel">Problem Statement
+                                                            in detail
+                                                        </h5>
+                                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center my-2 mb-4">
+                                                                        <h3>T2. Environmental and Sustainability
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C5.Waste Management Optimization: Develop a system that optimizes waste collection, sorting, recycling, and disposal processes using IoT sensors, AI-driven analytics, and predictive modeling to improve operational efficiencies.</strong></li>
+<li><strong>C6. Carbon Footprint Reduction: Create an app that helps individuals or businesses track and reduce their carbon footprint through actionable insights.</strong></li>
+<li><strong>C7.  Renewable Energy Monitoring: Build a platform for real-time monitoring and management of renewable energy sources like solar or wind farms.</strong></li>
+<li><strong>C8. Smart Agriculture: Develop IoT solutions for precision agriculture to optimize water usage, pesticide application, and crop yield.</strong></li>
+</ul>
+<!-- <h5><strong>Technologies to be used</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card hack-card">
+                                                <img class="card-img-top" src="images/sm.gif" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">T3.Smart Cities</h5>
+                                                    <p class="card-text">
+                                                        This theme maps to SDG 11: Sustainable Cities and Communities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </p>
+                                                    
+                                                    <a name="" id="" class="btn-link" href="#" data-target="#c12" data-toggle="modal" role="button">
+                                                        View More
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="c12" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        
+                                                        <h5 class="modal-title" id="exampleModalLabel">Problem Statement
+                                                            in detail
+                                                        </h5>
+                                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center my-2 mb-4">
+                                                                        <h3>T3.Smart Cities
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C9.  Traffic Management: Design a system using IoT and AI to optimize traffic flow, reduce congestion, and improve commuting experiences.</strong></li>
+<li><strong>C10. Public Safety Enhancement: Develop solutions for real-time crime detection and emergency response coordination using predictive analytics and sensor networks.</strong></li>
+<li><strong>C11. Urban Air Quality Monitoring: Build a network of low-cost sensors to monitor air quality across different areas of the city and provide actionable insights.</strong></li>
+<li><strong>C12. Smart Waste Management: Create a solution that uses smart bins and data analytics to optimize waste collection schedules and routes.</strong></li>
+<li><strong>C13. Community Engagement Platform: Develop an app/UI that fosters citizen engagement with local government, facilitates feedback, and promotes community initiatives.</strong></li>
+</ul>
+<!-- <h5><strong>Use any of the following technologies</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card hack-card">
+                                                <img class="card-img-top" src="images/he.gif" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">T4. Healthcare</h5>
+                                                    <p class="card-text">
+                                                        This theme maps to SDG 3: Good Health and Well-being.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                    </p>
+                                                    
+                                                    <a name="" id="" class="btn-link" href="#" data-target="#c13" data-toggle="modal" role="button">
+                                                        View More
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="c13" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        
+                                                        <h5 class="modal-title" id="exampleModalLabel">Problem Statement
+                                                            in detail
+                                                        </h5>
+                                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center my-2 mb-4">
+                                                                        <h3>T4. Healthcare
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <!-- <h5> &nbsp;</h5>
+<h5> &nbsp;</h5> -->
+<h5><strong>Challenge Areas (Choose any one)</strong></h5>
+<ul>
+<li><strong>C14.Provide a solution that should leverage advancements in technology, to create meaningful and sustainable improvements in the lives of blind people</strong></li>
+<li><strong>C15. Develop a complete solution that requires innovative solutions that enhance accessibility, affordability, and effectiveness of healthcare services while promoting patient-centric care and improving health outcomes for diverse populations.</strong></li>
+<li><strong>C16. Provide innovative solutions that improve early detection, personalized treatment options, patient education, and access to dermatological expertise, thereby enhancing overall management and outcomes for individuals affected by skin diseases.</strong></li>
+<li><strong>C17. Develop an early heart attack detection system, leveraging advanced algorithms and real-time data to identify at-risk individuals. The system should aim to enhance preventive healthcare and reduce mortality rates through timely intervention.</strong></li>
+</ul>
+<!-- <h5><strong>Use any of the following technologies</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        
+                                        <div class="col-md-6 mb-5">
+                                            <div class="card hack-card">
+                                                <img class="card-img-top" src="images/op.gif" alt="">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">T5. Open Innovations
+</h5>
+                                                    <p class="card-text">
+                                                        This theme maps to SDGs 9, 17
+                                                    </p>
+                                                    
+                                                    <a name="" id="" class="btn-link" href="#" data-target="#c14" data-toggle="modal" role="button">
+                                                        View More
+                                                    </a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="c14" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        
+                                                        <h5 class="modal-title" id="exampleModalLabel">Problem Statement
+                                                            in detail
+                                                        </h5>
+                                                        <button class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="container">
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <div class="text-center my-2 mb-4">
+                                                                        <h3>T5. Open Innovations
+
+                                                                        </h3>
+                                                                    </div>
+                                                                    <div>
+                                                                        <h5><strong>Challenge Areas </strong></h5>
+<ul>
+<li><strong>C18. Foster open innovation by developing creative, cross-disciplinary solutions to pressing global issues. Encourage collaboration and idea exchange to drive impactful technological and social advancements.</strong></li>
+<!-- <li style="font-weight: bold;"><strong>C10. Disaster Management system - optimized for either Flooding or Landslides</strong></li>
+</ul>
+<h5><strong>Use any of the following technologies</strong></h5>
+<ul>
+<li><strong>AI</strong></li>
+<li><strong>Blockchain</strong></li>
+<li><strong>IOT</strong></li>
+</ul>
+<p> &nbsp;</p> -->
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Modal End -->
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <hr class="my-4">
+                            
+
+
+                            <!-- Mentors -->
+                            
+
+                            <!-- Jury Common -->
+                            
+                            
+                            
+
+
+                            <!-- Schedule -->
+                            
+                            <div id="schedule-link" class="scroll-link"></div>
+                            <div class="container-fluid">
+                                <h3>
+                                    Schedule
+                                </h3>
+
+                                <div class="new-schedule">
+
+                                    <!-- DEFAULT -->
+                                     <!-- 
+                                    <div class="details-agenda">
+                                        <div class="date-section">
+                                            <div class="date-card">
+                                                
+                                                    <h6 class="date-card-start">Sat 31st August 2024<span style="font-size: x-small"> (Central European Summer Time)</span></h6>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="destails-section">
+                                            <div class="details-area">
+                                                <div class="details-card">
+                                                    <div class="clearfix">
+                                                        <div class="float-left time">
+                                                            <i class="fas fa-clock"></i>
+                                                            
+                                                                <span class="time-card-start"> 13:30:00</span>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <h6>
+                                                        
+                                                            Registrations Open
+                                                        
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    
+
+                                    <!-- LOOP -->
+                                    <p style="text-align: justify;" data-sourcepos="1:1-1:42"><strong style="font-size: 16px; color: rgb(52, 73, 94);"><strong><img src="images/rm.gif" alt="" width="100%" height="100%"></strong></strong></p>
+                                    <p style="text-align: justify;" data-sourcepos="1:1-1:42">&nbsp;</p>
+                                    
+
+                                    
+                                    <!--
+                                    <div class="details-agenda">
+                                        <div class="date-section">
+                                            <div class="date-card">
+                                                <h6 class="dateHere">Sat 31st August 2024<span style="font-size: x-small"> (Central European Summer Time)</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="destails-section">
+                                            <div class="details-area">
+                                                <div class="details-card">
+                                                    <div class="clearfix">
+                                                        <div class="float-left time">
+                                                            <i class="fas fa-clock"></i>
+                                                            <span class="timeHere"> 22:30:00 </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <h6>
+                                                        Online Prelim Submission Close
+                                                    </h6>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="details-agenda">
+                                        <div class="date-section">
+                                            <div class="date-card">
+                                                <h6 class="dateHere">Fri Oct 27 2023<span style="font-size: x-small"> (Central European Summer Time)</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="destails-section">
+                                            <div class="details-area">
+                                                <div class="details-card">
+                                                    <div class="clearfix">
+                                                        <div class="float-left time">
+                                                            <i class="fas fa-clock"></i>
+                                                            <span class="timeHere"> 20:29:00 </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <h6>
+                                                        Online Prelim Result Out
+                                                    </h6>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="details-agenda">
+                                        <div class="date-section">
+                                            <div class="date-card">
+                                                <h6 class="dateHere">Sat 31st August 2024<span style="font-size: x-small"> (Central European Standard Time)</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="destails-section">
+                                            <div class="details-area">
+                                                <div class="details-card">
+                                                    <div class="clearfix">
+                                                        <div class="float-left time">
+                                                            <i class="fas fa-clock"></i>
+                                                            <span class="timeHere"> 04:30:00 </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <h6>
+                                                        Offline Main Event - InnovaThon'23 - Day 1
+                                                    </h6>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="details-agenda">
+                                        <div class="date-section">
+                                            <div class="date-card">
+                                                <h6 class="dateHere">Fri Nov 03 2023<span style="font-size: x-small"> (Central European Standard Time)</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="destails-section">
+                                            <div class="details-area">
+                                                <div class="details-card">
+                                                    <div class="clearfix">
+                                                        <div class="float-left time">
+                                                            <i class="fas fa-clock"></i>
+                                                            <span class="timeHere"> 04:30:00 </span>
+                                                        </div>
+                                                    </div>
+
+                                                    <h6>
+                                                        Offline Main Event - InnovaThon'23 - Day 2
+                                                    </h6>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div> -->
+
+                                <p class="text-muted">
+                                    *Timeline is subject to change/tentative
+                                </p>
+
+                            </div>
+                            <hr class="my-4">
+                            
+
+                            <!-- Rewards -->
+                            
+                            <div id="prize-link" class="scroll-link"></div>
+                            <div class="container-fluid">
+                                <h3>
+                                    
+                                    Prizes
+                                    
+                                </h3>
+
+                                <div class="row">
+                                    <!-- Desktop Version -->
+                                    
+
+                                    
+
+                                    <!-- Prize Pool Prizes -->
+                                    
+                                    
+                                    <!-- Extra Prizes Listing -->
+                                    
+                                        <!-- Mobile Verison -->
+                                        <div class="col-12">
+                                            <div class="row m-0 p-0 d-block d-sm-none">
+                                                <div class="col-sm-12 p-0 m-0">
+                                                    <div class="swiper-container swiper-prize pb-4">
+                                                        <div class="swiper-wrapper">
+                                                            
+                                                            <div class="swiper-slide">
+                                                                <div class="card hack-card">
+                                                                    
+                                                                    <img class="card-img-top" src="images/Untitled-design-3.gif" alt="">
+                                                                    
+                                                                    <div class="card-body">
+                                                                        <!-- <h5 class="card-title">INR 75,000</h5> -->
+                                                                        <p class="mb-1 font-weight-bold">
+                                                                            1st Position holder
+                                                                        </p>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination-prize text-center w-100">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="swiper-slide">
+                                                                <div class="card hack-card">
+                                                                    
+                                                                    <img class="card-img-top" src="images/Untitled-design-4.gif" alt="">
+                                                                    
+                                                                    <div class="card-body">
+                                                                        <!-- <h5 class="card-title">INR 50,000</h5> -->
+                                                                        <p class="mb-1 font-weight-bold">
+                                                                            2nd Position holder
+                                                                        </p>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination-prize text-center w-100">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="swiper-slide">
+                                                                <div class="card hack-card">
+                                                                    
+                                                                    <img class="card-img-top" src="images/Untitled-design-5.gif" alt="">
+                                                                    
+                                                                    <div class="card-body">
+                                                                        <!-- <h5 class="card-title">INR 25,000</h5> -->
+                                                                        <p class="mb-1 font-weight-bold">
+                                                                            3rd Position holder
+                                                                        </p>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                                <div class="swiper-pagination-prize text-center w-100">
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- DESKTOP Version -->
+                                        <div class="col-12">
+                                            <div class="d-none d-sm-block prize-box mb-3">
+                                                <div class="row">
+                                                    
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card hack-card">
+                                                            
+                                                            <img class="card-img-top" src="images/Untitled-design-3.gif" alt="">
+                                                            
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">INR 75,000</h5> -->
+                                                                <p class="mb-2 font-weight-bold">
+                                                                    1st Position holder
+                                                                </p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card hack-card">
+                                                            
+                                                            <img class="card-img-top" src="images/Untitled-design-4.gif" alt="">
+                                                            
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">INR 50,000</h5> -->
+                                                                <p class="mb-2 font-weight-bold">
+                                                                    2nd Position holder
+                                                                </p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="card hack-card">
+                                                            
+                                                            <img class="card-img-top" src="images/Untitled-design-5.gif" alt="">
+                                                            
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">INR 25,000</h5> -->
+                                                                <p class="mb-2 font-weight-bold">
+                                                                    3rd Position holder
+                                                                </p>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    <!-- Category Prizes Listing -->
+                                    
+
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            
+
+                            
+                            
+
+                            <!-- Jury for Google AMD -->
+                            
+
+                            <!-- Partners -->
+                            
+                            <div id="partners" class="scroll-link"></div>
+                            
+                            <!-- <div class="container-fluid">
+                                <h3>
+                                    Partners
+                                </h3>
+
+                                <div class="row">
+                                    <div class="col-12 partners">
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            <div class="text-center d-inline-block">
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T12%253A53%253A59.080Z-CROWNED%20CONCEPT%20logo.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T12%3A53%3A59.080Z-CROWNED%20CONCEPT%20logo.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T13%253A33%253A55.148Z-LOGO%20%283%29_page-0001.jpg" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T13%3A33%3A55.148Z-LOGO%20%283%29_page-0001.jpg">
+                                                    
+                                                </div> -->
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    
+
+                                    
+
+                                    
+                                    <!-- <div class="col-12">
+                                        <div class="text-center my-4">
+                                            <h3>
+                                                Host Partners
+                                            </h3>
+                                        </div>
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            <div class="text-center d-inline-block">
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T12%253A47%253A58.145Z-WhatsApp_Image_2023-09-27_at_2.27.17_PM-removebg-preview%20%281%29.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T12%3A47%3A58.145Z-WhatsApp_Image_2023-09-27_at_2.27.17_PM-removebg-preview%20%281%29.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T12%253A50%253A28.125Z-MeitY%20Startup%20Hub-Logo-FINAL_5%201.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T12%3A50%3A28.125Z-MeitY%20Startup%20Hub-Logo-FINAL_5%201.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+
+                                    
+
+
+                                    
+
+                                    <!-- Upskilling Partner -->
+                                    
+                                    <!-- Platinum Sponsors -->
+<!--                                     
+                                    <div class="col-12">
+                                        <div class="text-center my-4">
+                                            <h3>
+                                                Platinum Sponsors
+                                            </h3>
+                                        </div>
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            <div class="text-center d-inline-block">
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T12%253A51%253A55.432Z-Body%20lovin%20logo%20png%20%282%29.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T12%3A51%3A55.432Z-Body%20lovin%20logo%20png%20%282%29.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                    <!-- Diamond Sponsors -->
+                                    
+                                    <!-- Silver Sponsors -->
+                                    
+                                    <!-- <div class="col-12">
+                                        <div class="text-center my-4">
+                                            <h3>
+                                                Silver Sponsors
+                                            </h3>
+                                        </div>
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            <div class="text-center d-inline-block">
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-10-22T12%253A53%253A01.015Z-Logo-Black.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-10-22T12%3A53%3A01.015Z-Logo-Black.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                    <!-- Bronze Sponsors -->
+                                    
+                                    
+                                    <!-- Bronze Sponsors -->
+                                    
+
+                                    <!-- Technology Partners -->
+                                    
+                                    
+                                    <!-- Certificate Partners -->
+                                    
+
+                                    <!-- Knowledge Partners -->
+                                    
+                                    
+                                    <!-- Academic Partners -->
+                                    
+
+                                    <!-- Incubation Partners -->
+                                    
+                                    <!-- Platform Partners -->
+                                    
+                                    <!-- <div class="col-12">
+                                        <div class="text-center my-4">
+                                            <h3>
+                                                Platform Partners
+                                            </h3>
+                                        </div>
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            <div class="text-center d-inline-block">
+                                                
+                                                
+                                                <div class="d-inline-block">
+                                                    
+                                                    <img src="images/2023-09-26T08%253A33%253A47.248Z-Copy%20of%20InnovaThon%2723%20Brochure.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-09-26T08%3A33%3A47.248Z-Copy%20of%20InnovaThon%2723%20Brochure.png">
+                                                    
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                    <!-- Institute Partners -->
+                                    
+                                    <!-- College Partners -->
+                                    
+                                    <!-- Stationary Partners -->
+                                    
+                                    <!-- Recruitment Partners -->
+                                    
+                                    <!-- Community Partner -->
+                                    
+                                    <!-- EcoSystem Partners -->
+                                    
+                                    <!-- Supported By Partners -->
+                                    
+                                    <!-- <div class="col-12">
+                                        <div class="text-center my-4">
+                                            <h3>Supported
+                                                By
+                                            </h3>
+                                        </div>
+                                        <div class="p-3 partners-pics mt-n2 text-center">
+                                            
+                                            
+                                            <div class="d-inline-block">
+                                                
+                                                <img src="images/2023-09-27T10%253A09%253A43.537Z-IIC_Logo%20%281%29.png" alt="https://s3-h2s-v2.s3.ap-south-1.amazonaws.com/2023-09-27T10%3A09%3A43.537Z-IIC_Logo%20%281%29.png">
+                                                
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div> -->
+                                    
+                                    <!-- Powered By Partners -->
+                                    
+                                    <!-- Powered By Partners -->
+<!--                                     
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>�&nbsp;</p>
+<p>�&nbsp;</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="container-fluid">
+                                    <hr class="divider m-0">
+                                    
+                                </div>
+                            </div>
+                            
+
+                            
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 
+                ==============================================
+                ==============================================
+                        FAQ
+                ==============================================
+                ==============================================
+                -->
+                <div id="faq-link" class="scroll-link"></div>
+                <div class="container-lg mt-5 faq">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <h3>
+                                Frequently Asked Questions
+                            </h3>
+                        </div>
+                        
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading0">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="false" aria-controls="collapse0">
+                                                What is the Hackmor'24 Hackathon?
+
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+                                        <div class="panel-body">
+                                            <p>
+                                                The HackMoR'24 Hackathon is a 24-hour coding competition where teams of developers come together to build innovative projects. Participants will work on various themes, present their ideas, and compete for prizes.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                                Who can participate?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                        <div class="panel-body">
+                                            <p>
+                                                Students can participate in the team of size 1 - 4 in the hackathon. While a passion for technology and innovation is appreciated, no prior experience is necessary. Students pursuing any Degree/Diploma course in any University/College, can participate in this event.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading2">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                How do I register?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                        <div class="panel-body">
+                                            <p>
+                                                Filling out the <a href="">registration form</a> on our website will allow you to participate in the HACKMoR Hackathon.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading3">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                What is the format of the hackathon? 
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                        <div class="panel-body">
+                                            <p>
+                                                The HACKMoR Hackathon consists of two phases: <br>Phase 1: Online Mood, <br>Phase 2: Offline Mood.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading4">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                                 What are the themes for this year? 
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                        <div class="panel-body">
+                                            <p>
+                                                The themes for HACKMoR Hackathon 2024 are: <br>
+- Healthcare <br>
+- Smart Cities <br>
+- Fintech <br>
+- Environment & Sustainability <br>
+- Open Innovations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading5">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                                What are the prizes?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                        <div class="panel-body">
+                                            <p>For the top three teams, there will be exciting awards worth of lakhs.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading6">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                                How will the projects be judged?                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                        <div class="panel-body">
+                                            <p>
+                                                Projects will be judged based on the following criteria: <br>
+- Innovation: Creativity and originality of the idea. <br>
+- Impact: Potential impact and usefulness of the project. <br>
+- Technical Execution: Quality of the implementation and code. <br>
+- Presentation: Clarity and effectiveness of the project demo.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading7">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                                What happens if I face technical difficulties?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                        <div class="panel-body">
+                                            <p>
+                                               Please use the dedicated Discord channel to contact our support staff if you experience any technical difficulties. Throughout the event, technical support will be provided by us.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading10">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                Who can I contact for more information?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                        <div class="panel-body">
+                                            <p>
+                                                Please use the assistance channel on our communication platform or email us at [support@hackmor.com](mailto:support@hackmor.com) with any questions or issues.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-3">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading11">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                                Are there any rules for the hackathon?
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                        <div class="panel-body">
+                                            <p>
+                                                Reffer to our <a href="">general guideline.</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+                </div>
+            </div>
+
+            <!-- ================= Contact Us Section ================== -->
+            <div class="container-lg mt-3 contactSection">
+                <div class="row contactSectionRow">
+                    <div class="col-12">
+                        
+                            
+                                <h3 class="">
+                                    
+                                    Contact Us
+                                    
+                                </h3>
+
+                                <div class="">
+                                    <div style="text-align: center;">
+<!-- <h4> &nbsp;</h4> -->
+<table style="border-collapse: collapse; width: 100%; border-width: 0px; height: 44.7812px;" border="1"><colgroup><col style="width: 33%;"><col style="width: 33%;"></colgroup>
+<tbody>
+<tr style="height: 44.7812px;">
+<td style="border-width: 0px; height: 44.7812px;">
+<h4>Mr. Chirag Varshney</h4>
+<h4>+91 9810973847</h4>
+<!-- <h4> &nbsp;</h4> -->
+</td>
+<td style="border-width: 0px; height: 44.7812px;">
+<h4>Mr. Raghav Khatura</h4>
+<h4>+91 9717586328</h4>
+<!-- <h4> &nbsp;</h4> -->
+</td>
+<td style="border-width: 0px; height: 44.7812px;">
+    <h4>Mr. Aman Gairola</h4>
+    <h4>+91 9310926891</h4>
+    <!-- <h4> &nbsp;</h4> -->
+    </td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4><strong><a>Email us at:&nbsp;</a></strong><a href="mailto:"></a></h4>
+<!-- <h4> &nbsp;</h4>
+<h4> &nbsp;</h4> -->
+</div>
+                                </div>
+                                
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <div class="d-block d-block-sm d-md-none mobile_register_button">
+
+            
+
+            
+                
+                    
+                        <button type="button" href="" class="btn btn-primary w-100 text-uppercase" onclick="window.location.href='/hack/innovathon/teamform'+window.location.search">
+                            <span class="mix-difference">
+                                Register Now
+                            </span>
+                        </button>
+                    
+                    
+                
+                
+
+            
+
+        </div>
+
+       <!-- imported black footer -->
+       <footer class="black-footer">
+        <!-- FOOTER -->
+        <div class="container-fluid">
+            <!-- Lg Md footer -->
+            <div class="row border-bottom large d-none d-lg-flex">           
+                <div class="col mb-4">
+                    <ul>
+                        <li>Connect</li>
+                        <a name="facebook" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-facebook mr-2"></i> Facebook
+                        </a>
+                        <a name="linkedin" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a>
+                        <a name="twitter" href="#" target="_blank" rel="noreferrer">
+                            <!-- <i class="fab fa-twitter mr-2"></i> Twitter -->
+                            <svg class="mr-1" width="12" height="12" viewBox="0 0 300 300" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"
+                                    fill="#ffff"></path>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a name="instagram" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-instagram mr-2"></i> Instagram
+                        </a>
+                        <a name="discord" href="#" target="_blank" rel="noreferrer">
+                            <i class="fab fa-discord mr-2"></i> Discord
+                        </a>
+                        
+                    </ul>
+                </div>
+    
+                <div class="col mb-4">
+                    <ul>
+                        <!-- <div class="a1" style="margin-left: -1rem;">
+                            <img src="./images/l12.png" alt="logo" width="130">
+                        </div> -->
+                        <p style="margin-left: -1rem;">
+                            <strong style="font-size: large;"> Contact Us </strong>
+                        </p>
+                        <div class="row a1">
+                            <div class="a1">
+                                <br>
+    
+                                <p class="names">
+                                    <!-- <img src="images/2022-11-11T10%253A32%253A12.879Z-white_icons8-city-buildings-48.png"
+                                        alt="City" width="20" height="20"> -->
+                                    <span>Mr. Chirag Varshney </span>
+                                </p>
+                                <p class="tags">
+                                    (Team Head)
+                                </p>
+                                <h4> &nbsp;</h4>
+    
+                            </div>
+    
+                            <div class="a1">
+                                <i class="fas fa-phone-alt"></i> Phone : +91 9810973847
+                            </div>
+    
+    
+                        </div>
+                    </ul>
+                </div>
+    
+                <div class="col mb-4">
+                    <ul>
+                        <div class="a1" style="margin-left: -1rem;">
+                            <img src="./images/l12.png" alt="logo" width="130">
+                        </div>
+                        <p style="margin-left: -1rem;">
+                            <strong style="font-size: large;"> HACKMoR </strong>
+                        </p>
+                        <div class="row a1">
+                            <div class="a1">
+                                <br>
+    
+                                <p class="adrs_country">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <b> <u> <i> India: </i> </u> </b>
+                                </p>
+    
+                                <p class="add_city">
+                                    <img src="images/2022-11-11T10%253A32%253A12.879Z-white_icons8-city-buildings-48.png"
+                                        alt="City" width="20" height="20">
+                                    <span>Faridabad : </span>
+                                </p>
+    
+                                <p class="full_address">
+                                    Manav Rachna Campus Rd, Aravali Hills, Gadakhor Basti Village, Sector 43, Faridabad, Haryana 121004
+                                </p>
+    
+
+                                <p class="full_address"> 121004- Zip Code</p>
+    
+    
+                            </div>
+    
+                            <div class="a1">
+                                <i class="fas fa-phone-alt"></i> Phone : +91 9810973847
+                            </div>
+    
+    
+                        </div>
+                    </ul>
+                </div>
+    
+            </div>
+            <!-- mobile Footer -->
+            <div class="row border-bottom d-lg-none">
+                <!--
+    
+                <button class="accordion border-bottom d-flex justify-content-between">
+                    <div>Hackathons</div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </button>
+                <div class="panel">-->
+                    <!-- <p><a href="/#ongoin-initiatives" target="_blank">Browse Hackathon</a></p> -->
+                    <!-- <p><a href="/eventlist" target="_blank">Explore Events</a></p> -->
+                     <!--
+                    <p><a href="/organizeHack" target="_blank" rel="noreferrer">Organize a Hackathon</a></p>
+                    <p><a href="/hackdetails" target="_blank">Corporate Hackathons</a></p>
+                    <p><a href="/collegehackathon">Community Hackathons</a></p>
+                    <p><a href="#">Hackathon
+                            Guide</a></p>
+                    <!-- <p><a href="#">Explore Hackathon</a></p> -->
+                     <!--
+                </div>-->
+    <!--
+                <button class="accordion border-bottom d-flex justify-content-between">
+                    <div>Company</div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </button>
+                <div class="panel">
+                    <!-- <p><a href="/about-us" target="_blank">About Us</a></p> --> <!--
+                    <p><a href="/career" target="_blank">Career</a></p>
+                    <p><a href="/contact-us" target="_blank">Contact Us</a></p>
+                    <p><a href="#" target="_blank" rel="noreferrer">Blogs</a></p>-->
+                    <!-- <p><a href="/fellows" target="_blank">Fellows</a></p> -->
+                    <!-- <p><a href="#" target="_blank">H2SCL</a></p> --><!--
+                    <p><a href="/onboarding"> Become academic Partner </a></p>
+                    <p><a href="/faqs" target="_blank">FAQs</a></p>
+                    <p><a href="/brand-guidelines">Brand Guidelines</a></p>
+                    <p><a href="/tnc">Terms &amp; Conditions</a></p>
+                </div>
+            -->
+    
+    
+                <!-- <button class="accordion border-bottom d-flex justify-content-between">
+                    <div>Star Events</div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </button>
+                <div class="panel">
+                    <p><a href="/hack/ntpchackathon" target="_blank"> NTPC </a></p>
+                    <p><a href="/snapchat-new-year-lensathon" target="_blank"> Snap India </a></p>
+                    <p><a href="/hack/electhon2023/" target="_blank">Electhon </a></p>
+                    <p><a href="https://hackathon.icc-cricket.com/" target="_blank"> ICC 'Next In' Global Hackathon
+                        </a></p>
+                    <p><a href="/hack/police-hackathon-karnataka" target="_blank"> Police Hackathon </a></p>
+                    <p><a href="/inspirehackathon" target="_blank"> Inspire Hackathon </a></p>
+                    <p><a href="/ideathon" target="_blank"> Ideathon </a></p>
+                    <p><a href="/dishathon" target="_blank"> Dishathon </a></p>
+                    <p><a href="/vistara" target="_blank"> Vistara </a></p>
+                    <p><a href="/hack/onehack" target="_blank"> One Hackathon </a></p>
+                    <p><a href="/codeforfuture" target="_blank"> Code for Future </a></p>
+                    <p><a href="/rpa-developer-camp" target="_blank"> UiPath RPADC </a></p>
+                </div> -->
+    
+                <button class="accordion border-bottom d-flex justify-content-between">
+                    <div>Connect</div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </button>
+                <div class="panel">
+    
+                    <p><a name="facebook" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-facebook mr-2"></i> Facebook
+                        </a></p>
+                    <p><a name="linkedin" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-linkedin mr-2"></i> LinkedIn
+                        </a></p>
+                    <!-- <p>
+                        <a name="Snapchat" href="https://t.snapchat.com/poF3e8Iy" target="_blank" rel="noreferrer">
+                            <i class="fab fa-snapchat mr-2"></i> Snapchat
+                        </a>
+                    </p> -->
+                    <p><a name="twitter" href="#" target="_blank" rel="noreferrer">
+                            <!-- <i class="fab fa-twitter mr-2"></i> Twitter -->
+                            <svg class="mr-1" width="12" height="12" viewBox="0 0 300 300" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"
+                                    fill="#ffff"></path>
+                            </svg>
+                            Twitter
+                        </a></p>
+                    <p><a name="instagram" href="#" target="_blank"
+                            rel="noreferrer">
+                            <i class="fab fa-instagram mr-2"></i> Instagram
+                        </a></p>
+                    <p><a name="discord" href="#" target="_blank" rel="noreferrer">
+                            <i class="fab fa-discord mr-2"></i> Discord
+                        </a></p>
+                </div>
+    
+    
+                <button class="accordion border-bottom d-flex justify-content-between">
+                    <div>Address</div>
+                    <div class="plus">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="cross">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </button>
+                <div class=" a1 panel">
+                    <div class="a1">
+                        <img src="./images/hh.png" alt="logo" width="130">
+    
+                    </div>
+                    <p>
+                        <strong style="font-size: large;"> HACKMoR</strong>
+                    </p>
+                    <b>Corporate Address:</b>
+                    <br>
+    
+                    <p class="adrs_country">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <b> <u> <i> India: </i> </u> </b>
+                    </p>
+    
+                    <!-- <p class="add_city">
+                        <img src="images/2022-11-11T10%253A32%253A12.879Z-white_icons8-city-buildings-48.png"
+                            alt="City" width="20" height="20">
+                        <span>Delhi NCR : </span>
+                    </p>
+    
+                    <p class="full_address">
+                        A-14, 4th floor Eco Tower, Sector 125, Noida, Uttar Pradesh 201303
+                    </p> -->
+    
+                    <!-- <p class="add_city">
+                        <img src="images/2022-11-11T10%253A32%253A12.879Z-white_icons8-city-buildings-48.png"
+                            alt="City" width="20" height="20">
+                        <span>Bangalore : </span>
+                    </p>
+    
+                    <p class="full_address">Wework Galaxy, 43, Residency Rd, Shanthala Nagar, Ashok Nagar,
+                        Bengaluru, Karnataka 560025</p> -->
+    
+    
+                    <!-- <p class="adrs_country">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <b> <u> <i> USA: </i> </u> </b>
+                    </p>
+    
+                    <p class="add_city">
+                        <img src="images/2022-11-11T10%253A32%253A12.879Z-white_icons8-city-buildings-48.png"
+                            alt="City" width="20" height="20">
+                        <span>Michigan : </span>
+                    </p>
+    
+                    <p class="full_address">2025, Long Lake, Troy, Michigan , 48098- Zip Code, (248)</p> -->
+    
+    
+    
+                    <!-- <div class="mt-3">
+      <p class="mb-0">
+        <i class="fas fa-envelope"></i> For Business Inquiry: <a href="mailto:info@hack2skill.com" class="d-inline-block">info@hack2skill.com</a>
+      </p>
+    </div> -->
+                    <!-- <div class="mt-3">
+      <p class="mb-0">
+        <i class="fas fa-envelope"></i> For Support &amp; Queries: <a href="mailto:support@hack2skill.com" class="d-inline-block">support@hack2skill.com</a>
+      </p>
+    </div>
+                    <div class="mt-1">
+                        <i class="fas fa-phone-alt"></i> Phone : +91 9810973847
+                    </div>
+    
+    
+                </div>
+            </div>
+    
+          <div class="row py-3 tags border-bottom">
+    <ul>
+    <li>Most popular searched items on Hack2skill</li> <br>
+    <a href="https://blog.hack2skill.com/what-is-a-hackathon-a-complete-guide-about-hackathon" target="_blank">Hackathon</a> |
+    <a href="https://blog.hack2skill.com/6-free-resources-to-learn-rust-in-2022" target="_blank" rel="noreferrer">Rust</a> |
+    <a href="https://blog.hack2skill.com/getting-started-with-competitive-programming" target="_blank">Competitive
+      programming</a> |
+    <a href="https://blog.hack2skill.com/7-tips-to-learn-data-structures-and-algorithms" target="_blank">Data
+      Structure and algorithm</a> |
+    
+    <a href="https://hack2skill.com/organizeHack" target="_blank">organize hackathon</a> |
+    <a href="https://blog.hack2skill.com/all-about-web3" target="_blank">Web 3.0</a> |
+    <a href="https://blog.hack2skill.com/python-make-your-first-django-project-some-secret-hacks" target="_blank">
+      Python</a> |
+    <a href="https://blog.hack2skill.com/how-to-become-a-blockchain-developer-in-2022" target="_blank">Blockchain</a> |
+    <a href="https://blog.hack2skill.com/how-fintech-is-taking-a-new-shape-in-the-metaverse-domain" target="_blank">Metaverse</a> |
+    <a href="https://blog.hack2skill.com/iot-and-its-uses" target="_blank">IoT</a> |
+    <a href="https://blog.hack2skill.com/how-ai-is-changing-the-lives-of-individuals-across-the-world" target="_blank">AI</a> |
+    <a href="https://blog.hack2skill.com/why-hackathons-are-important-from-a-career-perspective" target="_blank">Hackathon career</a> |
+    <a href="https://blog.hack2skill.com/introduction-to-apis" target="_blank">API </a> |
+    <a href="https://blog.hack2skill.com/top-5-open-source-companies" target="_blank">Open Source</a> |
+    <a href="https://blog.hack2skill.com/what-is-the-best-approach-to-becoming-more-proficient-in-c" target="_blank">C++</a> |
+    <a href="https://blog.hack2skill.com/internships-the-ultimate-guide-to-get-one" target="_blank">Internships</a>
+    |
+    <a href="https://blog.hack2skill.com/6-free-resources-to-learn-rust-in-2022" target="_blank">Rust Resources</a>
+    |
+    <a href="#" target="_blank">Ethereum</a> |
+    <a href="https://blog.hack2skill.com/what-is-augmented-reality-and-how-does-it-work" target="_blank">AR/VR</a> |
+    <a href="#" target="_blank">Bootcamp</a> |
+    <a href="#" target="_blank">Coding Challenges</a> |
+    
+    <a href="#" target="_blank">Workshops</a> |
+    <a href="#" target="_blank">Tech-camps</a> |
+    <a href="https://blog.hack2skill.com/metaverse-startups" target="_blank">Metaverse Startup</a> |
+    <a href="https://blog.hack2skill.com/top-10-metaverse-career-jobs-that-will-exist-by-2030" target="_blank">Metaverse Career</a> |
+    <a href="https://blog.hack2skill.com/how-fintech-is-taking-a-new-shape-in-the-metaverse-domain" target="_blank">Fintech</a> |
+    <a href="https://blog.hack2skill.com/3d-avatars-startups" target="_blank">3D Avatars</a> |
+    <a href="https://blog.hack2skill.com/rpa-the-unsung-hero-in-the-tech-world" target="_blank">RPA</a> |
+    <a href="https://blog.hack2skill.com/tips-to-build-a-project-in-a-hackathon" target="_blank">Hackathon
+      project</a> |
+    <a href="https://blog.hack2skill.com/7-tips-to-win-a-hackathon" target="_blank">Hackathon tips </a>
+    
+    
+    </ul>
+    </div> -->
+    
+            <div class="end-footer">
+                <div class="row align-items-center text-center py-3">
+                    <div class="col-lg-12 col-lg-12 col-sm-12 p-0">
+                        <div class="d-flex align-items-center justify-content-between copyRightAndLogo">
+                            <p>
+                                <span id="currentYear">2024</span> © All rights reserved by Manav Rachna University
+                            </p>
+                            <!-- <div class="isoLogos my-3">
+              <img class="img-fluid" src="images/2023-07-06T04%253A59%253A52.708Z-gdpr-logo.png" alt="">
+              <img class="img-fluid" src="images/iso_27001.svg" alt="">
+              <img class="img-fluid" src="images/iso_9001.svg" alt="">
+          </div> -->
+                        </div>
+                    </div>
+                    <!-- <div class="col-lg-6 col-lg-6 col-sm-6 d-flex justify-content-end">
+              <a name="facebook" href="https://www.facebook.com/hack2skill/" target="_blank"
+                  rel="noreferrer">
+                  <i class="fab fa-facebook"></i>
+              </a>
+              <a name="linkedin" href="https://www.linkedin.com/company/hack2skill/about/"
+                  target="_blank" rel="noreferrer">
+                  <i class="fab fa-linkedin"></i>
+              </a>
+              <a name="twitter" href="https://twitter.com/hack2skill" target="_blank"
+                  rel="noreferrer">
+                  <i class="fab fa-twitter"></i>
+              </a>
+              <a name="instagram" href="https://www.instagram.com/hack2skill/" target="_blank"
+                  rel="noreferrer">
+                  <i class="fab fa-instagram"></i>
+              </a>
+              <a name="discord" href="https://discord.gg/KMKtbxBJpW" target="_blank" rel="noreferrer">
+                  <i class="fab fa-discord"></i>
+              </a>
+              <a name="telegram" href="https://t.me/hack2skill" target="_blank" rel="noreferrer">
+                  <i class="fab fa-telegram"></i>
+              </a>
+              <a name="youtube" href="https://www.youtube.com/channel/UCw2br80x_dpvJoAsSCC-bGA"
+                  target="_blank" rel="noreferrer">
+                  <i class="fab fa-youtube"></i>
+              </a>
+              <a name="whatsapp" href="#"
+                  target="_blank" rel="noreferrer">
+                  <i class="fab fa-whatsapp"></i>
+              </a>
+          </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!--footer script-->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      var plus = this.firstChild.nextSibling.nextSibling.nextSibling;
+      var cross = this.lastChild.previousSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        plus.style.display = "block";
+        cross.style.display = "none";
+      } else {
+        panel.style.display = "block";
+        plus.style.display = "none";
+        cross.style.display = "block";
+      }
+
+    });
+  }
+</script>
+<script>
+  document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+</script>
+<script type="text/javascript">
+  _linkedin_partner_id = "3786764";
+  window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+  window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+  (function (l) {
+    if (!l) {
+      window.lintrk = function (a, b) { window.lintrk.q.push([a, b]) };
+      window.lintrk.q = []
+    }
+    var s = document.getElementsByTagName("script")[0];
+    var b = document.createElement("script");
+    b.type = "text/javascript"; b.async = true;
+    b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+    s.parentNode.insertBefore(b, s);
+  })(window.lintrk);
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none;" alt=""
+    src="https://px.ads.linkedin.com/collect/?pid=3786764&fmt=gif" />
+</noscript>
+    </div>
+    
+        <!-- Community Button -->
+        <!-- <a name="" id="" class="btn btn-primary btn-sm btn-discord btn-fixed" href="https://discord.gg/KMKtbxBJpW" target="_blank" role="button">
+            <i class="fab fa-discord"></i> Join Discord Community
+        </a> -->
+    
+
+    <!-- Modal Area -->
+    <div id="webinarPopUp" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="my-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="my-modal-title">AMA Session</h5>
+                    <button class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <h4>
+                            <strong>
+                                Instinct 2.0 - (AMA)
+                            </strong>
+                        </h4>
+
+                        <h5>
+                            Date and Time: 24 Feb 2022 | 05:00 PM IST
+                        </h5>
+                    </div>
+
+                    <iframe width="100%" height="415" src="https://www.youtube.com/embed/e-kkwR_te3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <a name="" id="" class="btn btn-danger btn-block mt-4" href="https://www.youtube.com/watch?v=e-kkwR_te3A" role="button" target="_blank">
+                                Watch Live on YouTube <i class="fa fa-youtube" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js" crossorigin="anonymous">
+    </script>
+    <script src="js/popper.min.js" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js" crossorigin="anonymous">
+    </script>
+
+
+    <!-- Google Translate ============> -->
+    <script type="text/javascript">
+        // Function to load and initialize Google Translate API
+        function loadGoogleTranslateAPI() {
+        const script = document.createElement('script');
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+        }
+    
+        // Function to toggle the visibility of the translate dropdown
+        function toggleTranslateDropdown() {
+        const translateDiv = document.getElementById('google_translate_element');
+        if (translateDiv.style.display === 'block') {
+            translateDiv.style.display = 'none';
+        } else {
+            translateDiv.style.display = 'block';
+        }
+        }
+    
+        // Function to handle the icon click and show the translate select div
+        document.getElementById('desktopTranslateIcon').addEventListener('click', function () {
+        toggleTranslateDropdown();
+        if (!window.google || !window.google.translate) {
+            loadGoogleTranslateAPI();
+        }
+        });
+
+        // Function to handle the icon click and show the translate select div
+        document.getElementById('mobileTranslateIcon').addEventListener('click', function () {
+        toggleTranslateDropdown();
+        if (!window.google || !window.google.translate) {
+            loadGoogleTranslateAPI();
+        }
+        });
+    
+        // Function to get the country language code from navigator.language
+        function getCountryLanguageCode() {
+        const userLanguage = navigator.language;
+        return userLanguage.split('-')[0]; // Extract the language code (e.g., "en" from "en-US")
+        }
+    
+        // Function to set the default language of the site
+        function setDefaultLanguage() {
+        const userLanguageCode = getCountryLanguageCode();
+        // Use the userLanguageCode to set the default language of your website
+        // For example, you could set it as the "lang" attribute of the <html> tag
+        console.log("userLanguageCode", userLanguageCode);
+        document.documentElement.lang = userLanguageCode;
+    
+        // Save the default language to local storage
+        localStorage.setItem('userLanguage', userLanguageCode);
+    
+        // Initialize Google Translate after the API has loaded
+        loadGoogleTranslateAPI();
+        }
+    
+        // Function to initialize Google Translate after the API has loaded
+        // Function to initialize Google Translate after the API has loaded
+        function googleTranslateElementInit() {
+        const userLanguageCode = getCountryLanguageCode();
+        document.documentElement.lang = userLanguageCode; // Set the preferred language to the <html> tag
+
+        new google.translate.TranslateElement(
+            { pageLanguage: 'auto', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL },
+            'google_translate_element'
+        );
+        }
+    
+        // Check if the user's language preference is already saved in local storage
+        const userLanguage = localStorage.getItem('userLanguage');
+    
+        // If the user's language preference is not saved, set the default language
+        if (!userLanguage) {
+        setDefaultLanguage();
+        } else {
+        // Set the language preference from local storage
+        document.documentElement.lang = userLanguage;
+        // Initialize Google Translate after the API has loaded
+        loadGoogleTranslateAPI();
+        }
+    </script>
+
+    <!-- Google Translate===== -->
+    <script>
+        $( document ).ready(function() {
+            if(navigator.language != 'en-US' && navigator.language != 'en' && navigator.language != 'en-GB' && navigator.language != "en-AU" && navigator.language != "en-CA" && navigator.language != "en-IN" && navigator.language != "en-IE" && navigator.language != "en-NZ" && navigator.language != "en-ZA" && navigator.language != "en-AE" && navigator.language != "en-ZM" && navigator.language != "en-ZW"  && navigator.language != "en-VI" && navigator.language != "en-TH"){
+                    console.log("in second script",localStorage.getItem('userLanguage'));
+                    let url = window.location.href.split('#')[0];
+                    url+='#googtrans(en|'+navigator.language+')';
+                    window.location.href = url;
+            }
+        });
+    </script>
+
+  
+
+    <!-- https://swiperjs.com/ -->
+    <script src="js/swiper.min.js"></script>
+    
+    <script async="">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        var myVar;
+        (function () {
+            var cssCode = $('#themeOfHack').html();
+            // document.getElementById('coverImage').style.backgroundImage = "url(" + $('#coverImageUrl').html() + ")";
+            // document.getElementById('coverImage').style.backgroundImage = "url(" + $('#coverImageUrl').html() + ")";
+           
+            
+            // Set the src attribute of the image tag with the cover image URL
+            document.getElementById('coverImage').src = document.getElementById('coverImageUrl').textContent;
+
+            if (cssCode.indexOf('#') >= 0) {
+                document.documentElement.style.setProperty('--primary-color', $('#themeOfHack').html());
+            }
+            $('.imagePlaceholder').hide();
+            $('.myMainContent').show();
+        })();
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.challenge-1', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            dynamicBullets: true,
+            pagination: {
+                el: '.swiper-pagination-challenge-1',
+                dynamicBullets: true,
+                clickable: true,
+            }
+        })
+        var mySwiper = new Swiper('.challenge-2', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            dynamicBullets: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                    loop: true,
+                },
+                575: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 30,
+                    loop: true
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination-challenge-2',
+                clickable: true,
+            }
+        })
+        var mySwiper = new Swiper('.swiper-prize', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            dynamicBullets: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                    loop: true,
+                },
+                575: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 30,
+                    loop: true
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination-prize',
+                clickable: true,
+            }
+        })
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-mentor-1', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            dynamicBullets: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                    loop: true,
+                },
+                575: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 30,
+                    loop: true
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination-mentor-1',
+                clickable: true,
+            }
+        })
+        var mySwiper = new Swiper('.swiper-mentor-2', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            dynamicBullets: true,
+            breakpoints: {
+                0: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    slidesPerView: 1,
+                    loop: true,
+                },
+                575: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 30,
+                    loop: true
+                },
+            },
+            pagination: {
+                el: '.swiper-pagination-mentor-2',
+                clickable: true,
+            }
+        })
+        var mySwiper = new Swiper('.swiper-judge', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            dynamicBullets: true,
+            pagination: {
+                el: '.swiper-pagination-judge',
+                clickable: true,
+            }
+        })
+    </script>
+    
+        <script>
+            var dateObj = new Date('2024-8-31T20:30:00.000Z');
+            console.log('2024-8-31T20:30:00.000Z');
+            var month = dateObj.toLocaleString('default', {
+                month: 'short'
+            }); //months from 1-12
+            var day = dateObj.getDate();
+            var year = dateObj.getFullYear();
+    
+            newdate = dateObj.toString().slice(4, 25);
+    
+            // Set the date we're counting down to
+            var countDownDate = new Date(newdate).getTime();
+    
+    
+            var x = setInterval(function () {
+    
+    
+                var now = new Date().getTime();
+    
+    
+                var distance = countDownDate - now;
+    
+    
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    
+                document.getElementById("countdown_launch").innerHTML = days + "d " + hours + "h " + minutes +
+                    "m " +
+                    seconds +
+                    "s ";
+    
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("idea-sec").innerHTML = "Submission Closed";
+                }
+            }, 1000);
+        </script>
+    
+
+
+    <script defer="">
+        function keepMe() {
+            window.location.href = '/hack/innovathon/teamform' + window.location
+                .search;
+        }
+    </script>
+
+    <!-- On Page Load Modal -->
+    
+
+    <!--footer script-->
+    <!-- <script>
+        var logoSize = function () {
+            document.getElementById("black-logo").style.width = "80px";
+            document.getElementById("black-logo").style.display = "inline-block";
+        }
+        setTimeout(logoSize, 100);
+    </script> -->
+    <script>
+        var logoSize = function () {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var logoElement = document.getElementById("black-logo");
+            
+            if (screenWidth >= 320 && screenWidth <= 767) {
+                logoElement.style.width = "50px";
+                logoElement.style.display = "inline-block";
+                
+            } else {
+                logoElement.style.width = "80px";
+                logoElement.style.display = "inline-block";
+            }
+        }
+        
+        logoSize();
+
+        // Call logoSize function on window load and resize
+        window.addEventListener('load', logoSize);
+        window.addEventListener('resize', logoSize);
+    </script>
+
+
+
+
+
+</body></html>
