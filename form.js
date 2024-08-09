@@ -5,22 +5,21 @@ function handleSubmit(event) {
     const form = document.getElementById('registrationForm');
     const formData = new FormData(form);
 
-    // Get the payment receipt file
+    // Get the project PDF file
+    const projectFile = document.getElementById('projectFile').files[0];
     const paymentReceipt = document.getElementById('paymentReceipt').files[0];
 
-    // Create a FileReader to read the file as a Base64 string
+    // Create a FileReader to read the files as Base64 strings
     const reader = new FileReader();
     reader.onloadend = function() {
-        // Set the Base64 string in the form data
+        formData.set('projectFile', reader.result);
         formData.set('paymentReceipt', reader.result);
 
-        // Prepare the URL-encoded data
         const urlEncodedData = new URLSearchParams();
         formData.forEach((value, key) => {
             urlEncodedData.append(key, value);
         });
 
-        // Send the form data to the Google Apps Script
         fetch(SCRIPT_URL, {
             method: 'POST',
             body: urlEncodedData,
@@ -44,18 +43,17 @@ function handleSubmit(event) {
         });
     };
 
-    // Read the file as a Base64 string
     reader.readAsDataURL(paymentReceipt);
     return false;
 }
 
 function updateMemberFields() {
     const numberOfMembers = document.getElementById('numberOfMembers').value;
-    const memberDetailsContainer = document.getElementById('memberDetailsContainer');
-    memberDetailsContainer.innerHTML = ''; // Clear existing fields
+    const teamMembersContainer = document.getElementById('teamMembersContainer');
+    teamMembersContainer.innerHTML = '';
 
-    for (let i = 2; i <= numberOfMembers; i++) { // Start from 2 because 1 is the team head
-        memberDetailsContainer.innerHTML += `
+    for (let i = 2; i <= numberOfMembers; i++) {
+        teamMembersContainer.innerHTML += `
             <div>
                 <h3>Team Member ${i}</h3>
                 <label for="teamMember${i}Name">Name:</label>
@@ -64,11 +62,17 @@ function updateMemberFields() {
                 <label for="teamMember${i}Email">Email:</label>
                 <input type="email" id="teamMember${i}Email" name="teamMember${i}Email" required>
 
-                <label for="teamMember${i}College">College:</label>
-                <input type="text" id="teamMember${i}College" name="teamMember${i}College" required>
+                <label for="teamMember${i}University">University Name:</label>
+                <input type="text" id="teamMember${i}University" name="teamMember${i}University" required>
 
-                <label for="teamMember${i}Phone">Phone:</label>
-                <input type="tel" id="teamMember${i}Phone" name="teamMember${i}Phone" required>
+                <label for="teamMember${i}CurrentYear">Current Year:</label>
+                <input type="text" id="teamMember${i}CurrentYear" name="teamMember${i}CurrentYear" required>
+
+                <label for="teamMember${i}FieldOfStudy">Field of Study:</label>
+                <input type="text" id="teamMember${i}FieldOfStudy" name="teamMember${i}FieldOfStudy" required>
+
+                <label for="teamMember${i}RollNo">Student Roll No:</label>
+                <input type="text" id="teamMember${i}RollNo" name="teamMember${i}RollNo" required>
             </div>
         `;
     }
