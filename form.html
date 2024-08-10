@@ -23,47 +23,48 @@
     
     <div class="container">
         <h2>Register for HACKMoR'24</h2>
-        <form id="registrationForm" onsubmit="return handleSubmit(event)" enctype="multipart/form-data">
+        <form id="registrationForm" method="POST" onsubmit="return handleSubmit(event)" enctype="multipart/form-data">
+         
             <h3>Team Head Information</h3>
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
+            <input type="text" id="name" name="name" autocomplete="name" required>
+            
             <label for="university">University Name:</label>
-            <input type="text" id="university" name="university" required>
-
+            <input type="text" id="university" name="university" autocomplete="organization" required>
+            
             <label for="currentYear">Current Year:</label>
-            <input type="text" id="currentYear" name="currentYear" required>
-
+            <input type="text" id="currentYear" name="currentYear" autocomplete="current-year" required>
+            
             <label for="fieldOfStudy">Field of Study:</label>
-            <input type="text" id="fieldOfStudy" name="fieldOfStudy" required>
-
+            <input type="text" id="fieldOfStudy" name="fieldOfStudy" autocomplete="organization-title" required>
+            
             <label for="studentRollNo">Student Roll No:</label>
-            <input type="text" id="studentRollNo" name="studentRollNo" required>
-
+            <input type="text" id="studentRollNo" name="studentRollNo" autocomplete="student-id" required>
+            
             <h3>Team Information</h3>
-            <label for="teamName">Team Name:</label>
-            <input type="text" id="teamName" name="teamName" required>
+        <label for="teamName">Team Name:</label>
+        <input type="text" id="teamName" name="teamName" autocomplete="off" required>
 
-            <label for="numberOfMembers">Number of Team Members (1-4):</label>
-            <input type="number" id="numberOfMembers" name="numberOfMembers" min="1" max="4" required onchange="updateMemberFields()">
+        <label for="numberOfMembers">Number of Team Members (1-4):</label>
+        <input type="number" id="numberOfMembers" name="numberOfMembers" min="1" max="4" autocomplete="off" required onchange="updateMemberFields()">
 
-            <div id="teamMembersContainer"></div>
-
+        <div id="teamMembersContainer"></div>
+            
             <h3>Project Details</h3>
             <label for="projectTitle">Project Title:</label>
-            <input type="text" id="projectTitle" name="projectTitle" required>
-
+            <input type="text" id="projectTitle" name="projectTitle" autocomplete="off" required>
+            
             <label for="themes">Themes:</label>
-            <input type="text" id="themes" name="themes" required>
-
+            <input type="text" id="themes" name="themes" autocomplete="off" required>
+            
             <label for="proposalUrl">Proposal (Google Drive URL):</label>
-            <input type="url" id="proposalUrl" name="proposalUrl" placeholder="Enter Google Drive URL" required>
-
+            <input type="url" id="proposalUrl" name="proposalUrl" placeholder="Enter Google Drive URL" autocomplete="off" required>
+            
             <label for="projectFile">Upload Project PDF:</label>
-            <input type="file" id="projectFile" name="projectFile" accept=".pdf" required>
+            <input type="file" id="projectFile" name="projectFile" accept=".pdf" autocomplete="off" required>
 
             <h3>Registration Information</h3>
             <label for="paymentMethod">Payment Method (NEFT):</label>
@@ -113,7 +114,7 @@
                 </table>
             </div>
             <label for="paymentReceipt">Upload NEFT Payment Receipt:</label>
-            <input type="file" id="paymentReceipt" name="paymentReceipt" accept="image/*" required>
+<input type="file" id="paymentReceipt" name="paymentReceipt" accept="image/*" autocomplete="off" required>
 
             <button type="submit">Register</button>
         </form>
